@@ -1,0 +1,124 @@
+{
+  "info": {
+    "_postman_id": "poketeam-architect-api-najmi-2026",
+    "name": "PokéTeam Architect API Collection",
+    "description": "Koleksi endpoint PokéAPI v2 untuk pengujian respon JSON, validasi struktur data model, dan integrasi Retrofit 2 pada aplikasi Android PokéTeam Architect (Muhammad Najmi Zahrian - NIM H1D024038).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://pokeapi.co/api/v2",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. GET List 151 Pokémon (Katalog Generasi 1)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/pokemon?limit=151&offset=0",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pokemon"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "151",
+              "description": "Batas jumlah Pokémon (151 Kanto)"
+            },
+            {
+              "key": "offset",
+              "value": "0",
+              "description": "Offset data awal"
+            }
+          ]
+        },
+        "description": "Mengambil daftar ringkas 151 Pokémon pertama untuk mengisi grid katalog di HomeScreen dan modal pemilih slot tim."
+      },
+      "response": []
+    },
+    {
+      "name": "2. GET Detail Charizard (#006 - Team Fire Attacker)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/pokemon/6",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pokemon",
+            "6"
+          ]
+        },
+        "description": "Mengambil rincian lengkap Charizard: tipe elemen (Fire, Flying), status fisik (berat, tinggi), abilities, dan 6 statistik dasar (HP, ATK, DEF, SP.ATK, SP.DEF, SPD) untuk dimasukkan ke Slot #1 tim."
+      },
+      "response": []
+    },
+    {
+      "name": "3. GET Detail Pikachu (#025 - Team Electric Sweeper)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/pokemon/25",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pokemon",
+            "25"
+          ]
+        },
+        "description": "Pengujian rincian Pokémon tipe Listrik (Electric) untuk validasi search bar dan pembentukan cakupan ofensif tim."
+      },
+      "response": []
+    },
+    {
+      "name": "4. GET Detail Blastoise (#009 - Team Water Tank)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/pokemon/9",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pokemon",
+            "9"
+          ]
+        },
+        "description": "Mengambil data Blastoise tipe Air (Water) sebagai tank pertahanan tim pada formasi PokéTeam Architect."
+      },
+      "response": []
+    }
+  ]
+}

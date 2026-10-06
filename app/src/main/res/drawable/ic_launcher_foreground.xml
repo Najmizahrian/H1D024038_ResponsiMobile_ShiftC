@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Pokéball Outer Ring Shadow / Border -->
+    <path
+        android:fillColor="#1E2024"
+        android:pathData="M54,26A28,28 0 1,0 54,82A28,28 0 1,0 54,26Z" />
+
+    <!-- Top Half (Red Hemisphere) -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M27.5,52.5A26.5,26.5 0 0,1 80.5,52.5Z" />
+
+    <!-- Bottom Half (White Hemisphere) -->
+    <path
+        android:fillColor="#FAFAFA"
+        android:pathData="M27.5,55.5A26.5,26.5 0 0,0 80.5,55.5Z" />
+
+    <!-- Center Horizontal Dark Dividing Line -->
+    <path
+        android:fillColor="#1E2024"
+        android:pathData="M27.5,52.5h53v3h-53z" />
+
+    <!-- Center Outer Button (Black Ring) -->
+    <path
+        android:fillColor="#1E2024"
+        android:pathData="M54,45A9,9 0 1,0 54,63A9,9 0 1,0 54,45Z" />
+
+    <!-- Center Inner Button (White Core) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,48A6,6 0 1,0 54,60A6,6 0 1,0 54,48Z" />
+
+    <!-- Center Smallest Accent Dot -->
+    <path
+        android:fillColor="#CFD8DC"
+        android:pathData="M54,51.5A2.5,2.5 0 1,0 54,56.5A2.5,2.5 0 1,0 54,51.5Z" />
+
+    <!-- Top Highlight Glare Reflection -->
+    <path
+        android:fillColor="#4DFFFFFF"
+        android:pathData="M37,36A20,20 0 0,1 60,30L58.5,33A17,17 0 0,0 39,38Z" />
+
+</vector>
