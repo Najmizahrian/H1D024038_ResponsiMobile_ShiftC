@@ -26,6 +26,11 @@
 
 ---
 
+## 🎥 Video Penjelasan
+▶️ **[Tonton Video Penjelasan Proyek di YouTube](https://youtu.be/_IIEvczepL4?feature=shared)**
+
+---
+
 ## 📱 Deskripsi Aplikasi
 **PokéTeam Architect** adalah aplikasi mobile Android berstandar industri yang dirancang untuk memfasilitasi pencarian, katalogisasi, serta **pembentukan formasi tim Pokémon kompetitif (Party of 6)** secara dinamis langsung dari [PokéAPI](https://pokeapi.co/).
 
